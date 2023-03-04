@@ -1,0 +1,9 @@
+@use '../../styles/variables.module.scss' as *;
+
+.cards {
+	align-items: center;
+}
+
+.cards > * {
+	background-image: linear-gradient(to right, $clr-primary, $clr-accent);
+}

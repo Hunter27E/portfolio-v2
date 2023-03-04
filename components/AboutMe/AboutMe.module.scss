@@ -1,0 +1,86 @@
+@use '../../styles/variables.module.scss' as *;
+
+.aboutMe {
+	align-items: center;
+	gap: 5rem;
+}
+
+.tagline {
+	gap: 0;
+	align-items: center;
+	text-align: center;
+	font-weight: bold;
+	font-size: clamp(1.15rem, 5vw, 2.5rem);
+}
+
+.aboutMeCard {
+	position: relative;
+	z-index: 1; // create stacking context so that img can be below text
+	overflow: hidden;
+	max-width: 1000px;
+	border-radius: $br-1;
+	background-color: $clr-primary;
+
+	.cardText {
+		padding: 1rem;
+	}
+
+	.cardImg {
+		border-radius: $br-1;
+		opacity: 0.5;
+	}
+	.cardImg:hover {
+		opacity: 0.75;
+	}
+
+	.cardSidebar {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 1rem;
+		background-color: rgba($clr-light, 0.5);
+	}
+
+	.cardSidebarSocials {
+		display: flex;
+		flex-direction: row;
+		gap: 1rem;
+	}
+}
+
+@media (min-width: $bp-tablet) {
+	.aboutMeCard {
+		display: flex;
+		flex-direction: row-reverse;
+		min-height: 500px;
+
+		.cardText {
+			padding: 2rem;
+		}
+
+		.cardImg {
+			position: absolute;
+			z-index: -1;
+			top: 50%;
+			right: 2rem;
+			max-width: 325px;
+			transform: translateY(-50%);
+		}
+
+		.cardSidebar {
+			flex-direction: column;
+			padding: 2rem;
+		}
+
+		.cardSidebarSocials {
+			flex-direction: column;
+		}
+	}
+}
+
+@media (min-width: $bp-desktop) {
+	.aboutMeCard {
+		width: 1000px;
+		justify-content: flex-end;
+	}
+}

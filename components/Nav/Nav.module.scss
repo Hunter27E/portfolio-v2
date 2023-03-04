@@ -1,0 +1,51 @@
+@use '../../styles/variables.module.scss' as *;
+
+// TODO fix bug that causes page to scroll to top when opening nav
+
+.nav {
+	display: flex;
+	justify-content: flex-end;
+	position: fixed;
+	z-index: 10;
+	top: 0;
+	width: 100%;
+	padding: 1rem 2rem;
+}
+
+.screen {
+	position: fixed;
+	inset: 0;
+	background-color: rgba($clr-primary, 0.75);
+	transform: scaleY(0);
+	transform-origin: top;
+	transition: 0.1s transform ease-in-out;
+}
+
+.navList {
+	list-style-type: none;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 5rem;
+	position: fixed;
+	inset: 0 0 0 auto;
+	padding: 1rem 2rem;
+	background-color: rgba($clr-primary, 0.75);
+	transform: scaleX(0);
+	transform-origin: right;
+	transition: 0.1s transform ease-in-out;
+}
+
+// styles for opening nav menu
+
+.nav.open > .navToggleBtn {
+	display: none;
+}
+
+.nav.open > .screen {
+	transform: scaleY(1);
+}
+
+.nav.open > .navList {
+	transform: scaleX(1);
+}

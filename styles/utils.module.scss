@@ -1,0 +1,169 @@
+@use './variables.module.scss' as *;
+
+// buttons
+
+.btnPrimary {
+	border: none;
+	border-bottom: 2px solid $clr-accent;
+	border-radius: 8px;
+	padding: 0.5rem 1rem;
+	font-family: 'Fira Code', monospace;
+	font-weight: bold;
+	color: $clr-accent;
+	background-color: rgba($clr-accent, 0.25);
+}
+
+.btnSecondary {
+	border: none;
+	border-bottom: 2px solid transparent;
+	padding: 0.5rem 1rem;
+	font-family: 'Fira Code', monospace;
+	font-weight: bold;
+	color: $clr-dark;
+	background-color: transparent;
+}
+.btnSecondary:hover {
+	border-bottom: 2px solid $clr-dark;
+}
+
+// display
+
+.displayBlock {
+	display: block;
+}
+
+// flex
+
+.flexColumn {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+.flexRow {
+	display: flex;
+	flex-direction: row;
+	gap: 1rem;
+}
+
+// links
+
+.link {
+	font-size: 1.25em;
+	color: $clr-dark;
+}
+.link:hover {
+	color: $clr-accent;
+}
+
+// section styles
+
+.section {
+	padding: 5rem 1rem;
+}
+
+// fonts
+
+.paragraph {
+	max-width: 55ch;
+	font-size: clamp(12px, 1rem, 24px);
+	line-height: 1.65;
+}
+
+.heading {
+	margin-bottom: 3rem;
+	font-size: clamp(3rem, 7vw, 5rem);
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: $clr-light;
+	text-align: center;
+	color: transparent;
+}
+
+.subheading {
+	position: relative;
+	top: 10px;
+	line-height: 1;
+	font-size: clamp(1.5rem, 3vw, 3rem);
+	font-weight: bold;
+	font-style: italic;
+	text-align: center;
+	color: $clr-light;
+}
+
+.gradientText {
+	font-size: 1.5em;
+	-webkit-text-stroke-width: 0;
+	-webkit-text-stroke-color: transparent;
+	color: transparent;
+	background-image: linear-gradient(to right, $clr-accent, $clr-primary);
+	background-clip: text;
+}
+
+.outlineText {
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: $clr-light;
+	color: transparent;
+}
+
+.typewriter {
+	border-right: 2px solid;
+	border-right-style: ridge;
+	max-width: max-content;
+	font-family: 'Fira Code', monospace;
+	animation: typing 2s steps(10) infinite, blinking 0.75s infinite;
+}
+
+@keyframes typing {
+	0%,
+	20%,
+	100% {
+		width: 0;
+	}
+
+	50% {
+		width: 100%;
+	}
+}
+
+@keyframes blinking {
+	0%,
+	100% {
+		border-color: $clr-light;
+	}
+
+	50% {
+		border-color: transparent;
+	}
+}
+
+/* [hidden] {
+	display: none !important;
+} */
+
+// screen readers
+
+.sr-only {
+	position: absolute;
+	overflow: hidden;
+	white-space: nowrap;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	border: 0;
+	clip: rect(0, 0, 0, 0);
+}
+
+.skip-to-content {
+	position: absolute;
+	z-index: 300;
+	padding: 0.25em 0.5em;
+	margin-inline: auto;
+	background-color: hsl(var(--clr-white));
+	color: hsl(var(--clr-dark));
+	transform: translateY(-100%);
+	transition: transform 100ms ease-in-out;
+}
+.skip-to-content:focus {
+	transform: translateY(0%);
+}

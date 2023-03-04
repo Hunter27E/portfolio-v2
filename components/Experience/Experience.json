@@ -1,0 +1,65 @@
+[
+	{
+		"company": "MasterClass",
+		"title": "Software Engineer",
+		"date": "June - Sep 2022",
+		"logoPath": "images/ivk-logo.png",
+		"logoAlt": "MasterClass logo",
+		"description": [
+			"Worked cross-functionally with Design and Product teams to build A/B experiments on major site surface areas aimed at increasing leads and conversions for MC’s consumer and enterprise products.",
+			"Developed frontend components using React, TypeScript, and Next.js by leveraging MC’s design system as well as building from scratch.",
+			"Thoroughly tested frontend components and user flows using Jest and React Testing Library to ensure highest code quality and correctness."
+		],
+		"webLink": "https://www.masterclass.com",
+		"githubLink": null,
+		"skills": [
+			"Bootstrap",
+			"A/B Testing",
+			"SCSS",
+			"React",
+			"TypeScript",
+			"Next.js"
+		],
+		"mockupImgPath": null
+	},
+	{
+		"company": ".IVK",
+		"title": "Full Stack Developer",
+		"date": "Jan - Present",
+		"logoPath": "/images/ivk-logo.png",
+		"logoAlt": ".IVK logo",
+		"description": [
+			"Built website based on client requirements to market the company and its products.",
+			"Integrated blog into website using Node.js backend interacting with MongoDB database, external API, and 3rd-party authentication provider.",
+			"Developed web pages using HTML, SCSS, and JavaScript while employing responsive web development and website accessibility best practices."
+		],
+		"webLink": "https://dotivk.com",
+		"githubLink": null,
+		"skills": [
+			"Node.js",
+			"MongoDB",
+			"HTML",
+			"SCSS",
+			"JavaScript",
+			"responsiveness",
+			"a11y"
+		],
+		"mockupImgPath": null
+	},
+	{
+		"company": "Bolan Museum",
+		"title": "Web Developer Intern",
+		"date": "June 2021 - Dec 2021",
+		"logoPath": "/images/bca-logo.png",
+		"logoAlt": "Bolan Contemporary Art Museum logo",
+		"description": [
+			"Spearheaded and executed complete website redesign from initial design mockups in Figma to website development.",
+			"Built responsive, accessible web pages using HTML, CSS, and JavaScript.",
+			"Collaborated closely with Museum Director regarding museum initiatives."
+		],
+		"webLink": "https://camuseum.web.app",
+		"githubLink": "https://github.com/Hunter27E/cam",
+		"skills": ["HTML", "CSS", "JavaScript", "Figma", "responsiveness"],
+		"mockupImgPath": null
+	}
+]

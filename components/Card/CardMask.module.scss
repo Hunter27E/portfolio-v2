@@ -1,0 +1,17 @@
+@use '../../styles/variables.module.scss' as *;
+
+.cardMask {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	z-index: 10;
+	inset: 0;
+	border-radius: $br-1;
+	background-color: rgba($clr-dark, 0.85);
+	backdrop-filter: blur(2px);
+}
+
+.logoImg {
+	width: 50%;
+}

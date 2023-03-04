@@ -1,0 +1,21 @@
+@use '../../styles/variables.module.scss' as *;
+
+.experience {
+	padding-inline: 0;
+}
+
+.cards {
+	overflow-x: scroll;
+	scroll-snap-type: x mandatory;
+}
+
+.cards > * {
+	scroll-snap-align: center;
+	flex-shrink: 0;
+}
+
+@media (min-width: $bp-xl-desktop) {
+	.cards {
+		justify-content: center;
+	}
+}

@@ -1,0 +1,118 @@
+@use '../../styles/variables.module.scss' as *;
+
+.card {
+	display: grid;
+	grid-template-rows: max-content auto max-content;
+	gap: 1rem;
+	position: relative;
+	padding: 2rem;
+	width: 90%;
+	border-radius: $br-1;
+	background-image: linear-gradient(to bottom, $clr-primary, $clr-accent);
+
+	overflow: hidden; // for the CardMask blur to not overflow
+}
+
+.experience {
+	grid-template-areas:
+		'headerSpace'
+		'contentSpace';
+	max-width: 400px;
+}
+
+.project {
+	grid-template-areas:
+		'headerSpace'
+		'contentSpace'
+		'mockupImgSpace';
+	max-width: 1200px;
+}
+
+.card header {
+	grid-area: headerSpace;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: max-content;
+
+	.headerLeft {
+		flex-grow: 0.8;
+
+		h1 {
+			font-family: 'Fira Code', monospace;
+		}
+
+		hr {
+			border: 0;
+			border-top: 1px solid $clr-dark;
+		}
+
+		.date {
+			font-size: 0.75rem;
+			font-style: italic;
+			color: rgba($clr-dark, 0.5);
+		}
+	}
+
+	.headerRight {
+		max-height: 3vh;
+		width: auto;
+		opacity: 0.5;
+	}
+}
+
+.card .content {
+	grid-area: contentSpace;
+
+	height: auto;
+
+	.top {
+		align-items: center;
+
+		.title {
+			padding: 0.25rem 0.5rem;
+			margin-right: auto;
+			border-radius: $br-1;
+			font-family: 'Fira Code', monospace;
+			font-weight: bold;
+			text-transform: uppercase;
+			background-color: $clr-accent;
+		}
+	}
+
+	.description {
+		flex-grow: 1;
+
+		> p {
+			font-size: 0.9em;
+		}
+	}
+
+	.skills {
+		flex-wrap: wrap;
+		gap: 0.5rem;
+		font-size: 0.9rem;
+
+		.skill {
+			padding: 0.25rem 0.5rem;
+			border-radius: $br-1;
+			font-weight: bold;
+			font-family: 'Fira Code', monospace;
+			background-color: rgba($clr-light, 0.5);
+		}
+	}
+}
+
+.card .mockupImg {
+	grid-area: mockupImgSpace;
+}
+
+@media (min-width: $bp-desktop) {
+	.project {
+		grid-template-areas:
+			'headerSpace mockupImgSpace'
+			'contentSpace mockupImgSpace'
+			'contentSpace mockupImgSpace';
+		grid-template-rows: auto 1fr 1fr;
+	}
+}
