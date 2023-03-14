@@ -1,7 +1,5 @@
 @use '../../styles/variables.module.scss' as *;
 
-// TODO fix bug that causes page to scroll to top when opening nav
-
 .nav {
 	display: flex;
 	justify-content: flex-end;
@@ -19,6 +17,18 @@
 	transform: scaleY(0);
 	transform-origin: top;
 	transition: 0.1s transform ease-in-out;
+}
+
+.hamburger {
+	aspect-ratio: 1;
+	padding: 0.5rem;
+	border: 3px solid transparent;
+	border-radius: 50%;
+	background-color: rgba($clr-accent, 0.25);
+	transition: 0.2s border-color ease-in-out;
+}
+.hamburger:hover {
+	border-color: $clr-accent;
 }
 
 .navList {

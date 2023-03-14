@@ -71,7 +71,10 @@ export const Nav = ({ activeSection }: NavProps) => {
 		>
 			<div className={styles.screen}></div>
 			<button onClick={toggleNav} className={styles.navToggleBtn}>
-				<FontAwesomeIcon icon={faBars} className='link' />
+				<FontAwesomeIcon
+					icon={faBars}
+					className={`link ${styles.hamburger}`}
+				/>
 			</button>
 			<ul className={styles.navList}>
 				<li>

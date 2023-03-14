@@ -10,8 +10,21 @@
 	border-radius: $br-1;
 	background-color: rgba($clr-dark, 0.85);
 	backdrop-filter: blur(2px);
+	opacity: 1;
+	transition: 0.2s opacity ease-in-out;
+}
+
+.cardMask.showMask {
+	opacity: 0;
 }
 
 .logoImg {
 	width: 50%;
+}
+
+// don't display max on mobile/tablet devices that don't have hover
+@media (max-width: $bp-desktop) {
+	.cardMask {
+		display: none;
+	}
 }

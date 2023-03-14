@@ -6,7 +6,6 @@
 	gap: 1rem;
 	position: relative;
 	padding: 2rem;
-	width: 90%;
 	border-radius: $br-1;
 	background-image: linear-gradient(to bottom, $clr-primary, $clr-accent);
 
@@ -17,6 +16,7 @@
 	grid-template-areas:
 		'headerSpace'
 		'contentSpace';
+	width: 90%;
 	max-width: 400px;
 }
 
@@ -25,7 +25,7 @@
 		'headerSpace'
 		'contentSpace'
 		'mockupImgSpace';
-	max-width: 1200px;
+	width: 100%; // extraProjects will be smaller
 }
 
 .card header {
@@ -87,24 +87,16 @@
 			font-size: 0.9em;
 		}
 	}
-
-	.skills {
-		flex-wrap: wrap;
-		gap: 0.5rem;
-		font-size: 0.9rem;
-
-		.skill {
-			padding: 0.25rem 0.5rem;
-			border-radius: $br-1;
-			font-weight: bold;
-			font-family: 'Fira Code', monospace;
-			background-color: rgba($clr-light, 0.5);
-		}
-	}
 }
 
 .card .mockupImg {
 	grid-area: mockupImgSpace;
+}
+
+@media (min-width: $bp-tablet) {
+	.gradientBorderWrapper {
+		width: calc(100% / 2 - 1rem);
+	}
 }
 
 @media (min-width: $bp-desktop) {
@@ -114,5 +106,64 @@
 			'contentSpace mockupImgSpace'
 			'contentSpace mockupImgSpace';
 		grid-template-rows: auto 1fr 1fr;
+	}
+
+	.project:nth-child(odd) {
+		grid-template-areas:
+			'headerSpace mockupImgSpace'
+			'contentSpace mockupImgSpace'
+			'contentSpace mockupImgSpace';
+	}
+	.project:nth-child(even) {
+		grid-template-areas:
+			'mockupImgSpace headerSpace'
+			'mockupImgSpace contentSpace'
+			'mockupImgSpace contentSpace';
+	}
+
+	.gradientBorderWrapper {
+		width: calc(100% / 3 - 1rem);
+	}
+}
+
+.gradientBorderWrapper {
+	max-width: 400px;
+	padding: 3px;
+	border-radius: $br-1;
+	background-image: linear-gradient(
+		to bottom right,
+		$clr-primary,
+		$clr-accent
+	);
+}
+
+// if confused, look at gradientBorderWrapper styles above
+.extraProject {
+	padding: 1rem;
+	border-radius: $br-1;
+	background-image: none;
+	background-color: $clr-dark;
+	color: $clr-light;
+
+	header h1 {
+		margin-right: auto;
+	}
+
+	.clrLight {
+		color: $clr-light;
+	}
+}
+
+.skills {
+	flex-wrap: wrap;
+	gap: 0.5rem;
+	font-size: 0.9rem;
+
+	.skill {
+		padding: 0.25rem 0.5rem;
+		border-radius: $br-1;
+		font-weight: bold;
+		font-family: 'Fira Code', monospace;
+		background-color: rgba($clr-light, 0.5);
 	}
 }

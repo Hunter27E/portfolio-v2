@@ -26,7 +26,10 @@ export const AboutMe = () => {
 	}, [])
 
 	return (
-		<section className={`${styles.aboutMe} flexColumn section`}>
+		<section
+			className={`${styles.aboutMe} flexColumn section`}
+			id='aboutMe'
+		>
 			<p className={`${styles.tagline} outlineText flexColumn`}>
 				<span>
 					I'm a

@@ -1,9 +1,37 @@
 @use '../../styles/variables.module.scss' as *;
 
 .cards {
-	align-items: center;
+	gap: 1.5rem;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 
-.cards > * {
-	background-image: linear-gradient(to right, $clr-primary, $clr-accent);
+.cards > *:nth-child(odd) {
+	background-image: linear-gradient(to bottom, $clr-primary, $clr-accent);
+}
+
+.toggleExtraProjectsBtn {
+	width: 100%;
+	margin-top: 3rem;
+}
+
+@media (min-width: $bp-tablet) {
+	.cards {
+		justify-content: space-between;
+	}
+
+	.toggleExtraProjectsBtn {
+		width: max-content;
+		margin-inline: auto;
+	}
+}
+
+@media (min-width: $bp-desktop) {
+	.cards > *:nth-child(odd) {
+		background-image: linear-gradient(to right, $clr-primary, $clr-accent);
+	}
+
+	.cards > *:nth-child(even) {
+		background-image: linear-gradient(to left, $clr-primary, $clr-accent);
+	}
 }

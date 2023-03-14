@@ -15,7 +15,7 @@ export const Hero = () => {
 			</h1>
 			<div className={styles.ctaBtns}>
 				<a href='#contactMe' className='btnPrimary'>
-					SAY HELLO!
+					SAY HELLO
 				</a>
 				<a href='#aboutMe' className='btnSecondary'>
 					READ MORE

@@ -1,0 +1,94 @@
+@use '../../styles/variables.module.scss' as *;
+
+.contactMe {
+	position: relative;
+	width: 100vw;
+	max-width: unset;
+}
+
+.backgroundImg {
+	position: absolute;
+	inset: 0;
+	z-index: -1;
+	background-image: url('/images/webdev.jpg');
+	background-position: center;
+	background-size: cover;
+	opacity: 0.4;
+}
+
+.form {
+	gap: 1rem;
+	max-width: 600px;
+	margin-inline: auto;
+
+	// name
+	> :nth-child(1) {
+		width: 90%;
+	}
+
+	// email
+	> :nth-child(2) {
+		width: 65%;
+	}
+
+	// phone
+	> :nth-child(3) {
+		width: 80%;
+	}
+
+	// message
+	> :nth-child(4) {
+		width: 100%;
+		gap: 0.5rem;
+	}
+}
+
+.sendBtn {
+	margin-top: 2rem;
+}
+
+.formGroup {
+	padding: 0.5rem 1rem;
+	border-radius: $br-1;
+	background-color: rgba($clr-primary, 0.75);
+
+	label {
+		font-weight: bold;
+	}
+
+	input {
+		flex-grow: 1;
+	}
+
+	input::placeholder,
+	textarea::placeholder {
+		color: rgba($clr-dark, 0.5);
+	}
+}
+
+.footer {
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	margin-top: 3rem;
+
+	.tagline {
+		width: 100%;
+		text-align: center;
+	}
+
+	a {
+		text-decoration: 5px solid underline;
+		font-size: 1.1rem;
+	}
+	a:hover {
+		color: $clr-accent;
+	}
+}
+
+@media (min-width: $bp-tablet) {
+	.sendBtn {
+		width: max-content;
+		margin-inline: auto;
+	}
+}

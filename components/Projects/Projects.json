@@ -12,5 +12,19 @@
 		"githubLink": null,
 		"skills": ["React", "CSS", "Redux"],
 		"mockupImgPath": "/images/vcr-mock.png"
+	},
+	{
+		"company": "Virtual Cinema Records",
+		"title": "Frontend Developer",
+		"date": "2020",
+		"logoPath": null,
+		"logoAlt": "",
+		"description": [
+			"Movie-recommendation website. Find and explore new movies based on your preferences, and get information on where to stream them right away!"
+		],
+		"webLink": "",
+		"githubLink": null,
+		"skills": ["React", "CSS", "Redux"],
+		"mockupImgPath": "/images/vcr-mock.png"
 	}
 ]

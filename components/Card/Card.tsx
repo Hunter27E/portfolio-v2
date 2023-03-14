@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 import cn from 'classnames'
 // Font Awesome
@@ -20,8 +20,7 @@ interface CardProps {
 	githubLink: string | null
 	skills: string[]
 	mockupImgPath: string | null
-	variant: 'project' | 'experience'
-	isActive: boolean
+	variant: 'project' | 'experience' | 'extraProject'
 }
 
 export const Card = ({
@@ -36,20 +35,29 @@ export const Card = ({
 	skills,
 	mockupImgPath,
 	variant,
-	isActive,
 }: CardProps) => {
-	const showCardMask =
-		variant === 'experience' && logoPath !== null && !isActive
+	const [isBeingHovered, setIsBeingHovered] = useState(false)
 
-	return (
+	const showCardMask = variant === 'experience' && logoPath !== null
+	const isExtraProject = variant === 'extraProject'
+
+	return !isExtraProject ? (
 		<article
 			className={cn({
 				[styles.project]: variant === 'project',
 				[styles.experience]: variant === 'experience',
 				[styles.card]: true,
 			})}
+			onMouseEnter={() => setIsBeingHovered(true)}
+			onMouseLeave={() => setIsBeingHovered(false)}
 		>
-			{showCardMask && <CardMask logoPath={logoPath} logoAlt={logoAlt} />}
+			{showCardMask && (
+				<CardMask
+					logoPath={logoPath}
+					logoAlt={logoAlt}
+					isBeingHovered={isBeingHovered}
+				/>
+			)}
 			<header>
 				<div className={`${styles.headerLeft} flexColumn`}>
 					<h1>{company}</h1>
@@ -97,12 +105,38 @@ export const Card = ({
 				/>
 			)}
 		</article>
+	) : (
+		<div className={styles.gradientBorderWrapper}>
+			<article className={`${styles.extraProject} flexColumn`}>
+				<header className={`flexRow`}>
+					<h1>{company}</h1>
+					<a href={webLink}>
+						<FontAwesomeIcon
+							icon={faLink}
+							className={`link ${styles.clrLight}`}
+						/>
+					</a>
+					{githubLink && (
+						<a href={githubLink}>
+							<FontAwesomeIcon
+								icon={faGithub}
+								className={`link ${styles.clrLight}`}
+							/>
+						</a>
+					)}
+				</header>
+				<p>{description}</p>
+				<div className={`${styles.skills} flexRow`}>
+					{skills.map((skill, index) => (
+						<span className={styles.skill} key={index}>
+							{skill}
+						</span>
+					))}
+				</div>
+			</article>
+		</div>
 	)
 }
-
-/*
-<article className={`${styles.card} flexColumn`}>
-*/
 
 /*
 

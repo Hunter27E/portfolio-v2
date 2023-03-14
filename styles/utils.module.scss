@@ -3,27 +3,33 @@
 // buttons
 
 .btnPrimary {
-	border: none;
-	border-bottom: 2px solid $clr-accent;
+	border: 3px solid transparent;
 	border-radius: 8px;
-	padding: 0.5rem 1rem;
+	padding: 0.75rem 1.5rem;
 	font-family: 'Fira Code', monospace;
 	font-weight: bold;
 	color: $clr-accent;
 	background-color: rgba($clr-accent, 0.25);
+	cursor: pointer;
+	transition: 0.2s border-color ease-in-out;
+}
+.btnPrimary:hover {
+	border-color: $clr-accent;
 }
 
 .btnSecondary {
 	border: none;
-	border-bottom: 2px solid transparent;
-	padding: 0.5rem 1rem;
+	border-bottom: 3px solid transparent;
+	padding: 0.75rem 0;
 	font-family: 'Fira Code', monospace;
 	font-weight: bold;
 	color: $clr-dark;
 	background-color: transparent;
+	cursor: pointer;
+	transition: 0.2s border-color ease-in-out;
 }
 .btnSecondary:hover {
-	border-bottom: 2px solid $clr-dark;
+	border-color: $clr-dark;
 }
 
 // display
@@ -51,6 +57,7 @@
 .link {
 	font-size: 1.25em;
 	color: $clr-dark;
+	transition: 0.2s color ease-in-out;
 }
 .link:hover {
 	color: $clr-accent;
@@ -59,7 +66,9 @@
 // section styles
 
 .section {
+	margin: 0 auto;
 	padding: 5rem 1rem;
+	max-width: 1250px;
 }
 
 // fonts

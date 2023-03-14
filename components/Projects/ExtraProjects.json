@@ -1,0 +1,44 @@
+[
+	{
+		"company": "Company",
+		"title": "Title",
+		"date": "2023",
+		"logoPath": null,
+		"logoAlt": "",
+		"description": [
+			"just one little description will go here, or maybe it will be more than a little idk"
+		],
+		"webLink": "#",
+		"githubLink": "#",
+		"skills": ["React", "Tailwind", "Something"],
+		"mockupImgPath": null
+	},
+	{
+		"company": "Company",
+		"title": "Title",
+		"date": "2023",
+		"logoPath": null,
+		"logoAlt": "",
+		"description": [
+			"just one little description will go here, or maybe it will be more than a little idk"
+		],
+		"webLink": "#",
+		"githubLink": "#",
+		"skills": ["React", "Tailwind", "Something"],
+		"mockupImgPath": null
+	},
+	{
+		"company": "Company",
+		"title": "Title",
+		"date": "2023",
+		"logoPath": null,
+		"logoAlt": "",
+		"description": [
+			"just one little description will go here, or maybe it will be more than a little idk"
+		],
+		"webLink": "#",
+		"githubLink": "#",
+		"skills": ["React", "Tailwind", "Something"],
+		"mockupImgPath": null
+	}
+]
