@@ -16,11 +16,12 @@
 	grid-template-areas:
 		'headerSpace'
 		'contentSpace';
-	width: 90%;
+	width: 90%; // overriden in Experience.module.scss
 	max-width: 400px;
 }
 
 .project {
+	gap: 2rem;
 	grid-template-areas:
 		'headerSpace'
 		'contentSpace'

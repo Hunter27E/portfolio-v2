@@ -23,7 +23,7 @@
 }
 
 // don't display max on mobile/tablet devices that don't have hover
-@media (max-width: $bp-desktop) {
+@media (max-width: calc($bp-desktop - 1px)) {
 	.cardMask {
 		display: none;
 	}

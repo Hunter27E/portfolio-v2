@@ -8,23 +8,21 @@
 		"description": [
 			"Movie-recommendation website. Find and explore new movies based on your preferences, and get information on where to stream them right away!"
 		],
-		"webLink": "",
+		"webLink": "http://mtelsgjvxu.us16.qoddiapp.com/",
 		"githubLink": null,
 		"skills": ["React", "CSS", "Redux"],
 		"mockupImgPath": "/images/vcr-mock.png"
 	},
 	{
-		"company": "Virtual Cinema Records",
+		"company": "Wordle Clone",
 		"title": "Frontend Developer",
-		"date": "2020",
+		"date": "2022",
 		"logoPath": null,
 		"logoAlt": "",
-		"description": [
-			"Movie-recommendation website. Find and explore new movies based on your preferences, and get information on where to stream them right away!"
-		],
-		"webLink": "",
-		"githubLink": null,
-		"skills": ["React", "CSS", "Redux"],
-		"mockupImgPath": "/images/vcr-mock.png"
+		"description": ["Clone of the NY Times game Wordle."],
+		"webLink": "https://clever-kulfi-8eab4e.netlify.app/",
+		"githubLink": "https://github.com/Hunter27E/wordle-clone",
+		"skills": ["React", "CSS"],
+		"mockupImgPath": "/images/wordle-mock.png"
 	}
 ]

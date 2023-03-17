@@ -9,7 +9,7 @@ export const Experience = () => (
 	<section className={`section ${styles.experience}`}>
 		<h2 className='subheading'>i've learned a lot from my SWE roles!</h2>
 		<h1 className='heading'>EXPERIENCE</h1>
-		<div className={`flexRow ${styles.cards}`}>
+		<div className={`${styles.cards}`}>
 			{experiences.map(
 				(
 					{

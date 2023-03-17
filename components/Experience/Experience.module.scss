@@ -5,6 +5,8 @@
 }
 
 .cards {
+	display: flex;
+	gap: 1rem;
 	overflow-x: scroll;
 	scroll-snap-type: x mandatory;
 }
@@ -14,8 +16,22 @@
 	flex-shrink: 0;
 }
 
-@media (min-width: $bp-xl-desktop) {
+@media (min-width: $bp-desktop) {
 	.cards {
+		display: grid;
+		gap: 1.5rem;
 		justify-content: center;
+		grid-template-columns: max-content max-content;
+		grid-auto-rows: 1fr;
+	}
+
+	.cards > :nth-child(n) {
+		width: 100%; // overwriting Card.module.scss
+	}
+}
+
+@media (min-width: $bp-lg-desktop) {
+	.cards {
+		grid-template-columns: max-content max-content max-content;
 	}
 }

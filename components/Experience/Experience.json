@@ -1,13 +1,29 @@
 [
 	{
+		"company": "TixTrack",
+		"title": "Software Engineer",
+		"date": "Dec 2022 - Now",
+		"logoPath": "images/tixtrack-logo.png",
+		"logoAlt": "TixTrack logo",
+		"description": [
+			"Identifying bugs in the code reported by client services.",
+			"Diagnose and fix bugs.",
+			"Frontend and backend experience. Backend in C# and frontend in Vue."
+		],
+		"webLink": "https://www.tixtrack.com",
+		"githubLink": null,
+		"skills": ["C#", "Vue.js", "SQL", ".NET Core"],
+		"mockupImgPath": null
+	},
+	{
 		"company": "MasterClass",
 		"title": "Software Engineer",
 		"date": "June - Sep 2022",
-		"logoPath": "images/ivk-logo.png",
+		"logoPath": "images/mc-logo.png",
 		"logoAlt": "MasterClass logo",
 		"description": [
-			"Worked cross-functionally with Design and Product teams to build A/B experiments on major site surface areas aimed at increasing leads and conversions for MC’s consumer and enterprise products.",
-			"Developed frontend components using React, TypeScript, and Next.js by leveraging MC’s design system as well as building from scratch.",
+			"Worked cross-functionally with Design and Product teams to build A/B experiments on major site surface areas aimed at increasing leads and conversions for MC's consumer and enterprise products.",
+			"Developed frontend components using React, TypeScript, and Next.js by leveraging MC's design system as well as building from scratch.",
 			"Thoroughly tested frontend components and user flows using Jest and React Testing Library to ensure highest code quality and correctness."
 		],
 		"webLink": "https://www.masterclass.com",
