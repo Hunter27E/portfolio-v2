@@ -4,7 +4,7 @@
 	display: flex;
 	justify-content: flex-end;
 	position: fixed;
-	z-index: 10;
+	z-index: 100;
 	top: 0;
 	width: 100%;
 	padding: 1rem 2rem;
@@ -40,7 +40,7 @@
 	position: fixed;
 	inset: 0 0 0 auto;
 	padding: 1rem 2rem;
-	background-color: rgba($clr-primary, 0.75);
+	background-color: rgba($clr-primary, 0.5);
 	transform: scaleX(0);
 	transform-origin: right;
 	transition: 0.1s transform ease-in-out;

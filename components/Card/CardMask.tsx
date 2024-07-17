@@ -18,7 +18,7 @@ export const CardMask = ({
 	<div
 		className={cn({
 			[styles.cardMask]: true,
-			[styles.showMask]: isBeingHovered,
+			[styles.hideMask]: isBeingHovered,
 		})}
 	>
 		<img src={logoPath} alt={logoAlt} className={styles.logoImg} />

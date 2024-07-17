@@ -4,24 +4,23 @@
 	overflow: hidden;
 	height: 90vh;
 	padding-block: 5rem;
-	background-image: url('../../public/images/hero-bg-mobile.jpg'),
-		linear-gradient(
-			to bottom right,
-			rgba($clr-dark, 0.75),
-			rgba($clr-primary, 0.75),
-			rgba($clr-accent, 0.75)
-		);
 	background-size: cover;
 	background-position: center;
+
+	background-image: url('../../public/images/hero.png'),
+		radial-gradient(rgba($clr-primary, 0.65), rgba($clr-accent, 0.35));
+
 	background-blend-mode: overlay;
-	background-color: rgba($clr-dark, 0.25);
 }
 
 .title {
 	white-space: nowrap;
 	margin-left: -0.15ch;
-	font-size: 16.5vw;
+	font-size: 11.65vw;
 	line-height: 1;
+
+	-webkit-text-stroke-width: 3px;
+	-webkit-text-stroke-color: rgba($clr-light, 0.75);
 }
 
 .subtitle {
@@ -36,17 +35,6 @@
 	gap: 2rem;
 	margin-top: 3rem;
 	padding-left: max(2rem, 10vw);
-}
-
-@media (min-width: $bp-mobile) {
-	.hero {
-		background-image: /* url('../../public/images/hero-bg-desktop.jpg'), */ linear-gradient(
-			to bottom right,
-			rgba($clr-dark, 0.75),
-			rgba($clr-primary, 0.75),
-			rgba($clr-accent, 0.75)
-		);
-	}
 }
 
 @media (min-width: $bp-desktop) {

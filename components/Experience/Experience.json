@@ -6,13 +6,15 @@
 		"logoPath": "images/tixtrack-logo.png",
 		"logoAlt": "TixTrack logo",
 		"description": [
-			"Identifying bugs in the code reported by client services.",
-			"Diagnose and fix bugs.",
-			"Frontend and backend experience. Backend in C# and frontend in Vue."
+			"Developing new features and API endpoints and fixed bugs in the application's backend using C# and .NET Core.",
+			"Contributing to increasing backend test coverage by writing C# integration and unit tests for any methods and API endpoints touched.",
+			"Worked in engineering support investigating, diagnosing, and triaging bugs in the production system reported by clients.",
+			"Writing and testing SQL scripts to fix data in the production database.",
+			"Creating documentation for engineering processes and features of the application."
 		],
 		"webLink": "https://www.tixtrack.com",
 		"githubLink": null,
-		"skills": ["C#", "Vue.js", "SQL", ".NET Core"],
+		"skills": ["C#", "SQL", ".NET Core", "Vue.js"],
 		"mockupImgPath": null
 	},
 	{
@@ -28,20 +30,13 @@
 		],
 		"webLink": "https://www.masterclass.com",
 		"githubLink": null,
-		"skills": [
-			"Bootstrap",
-			"A/B Testing",
-			"SCSS",
-			"React",
-			"TypeScript",
-			"Next.js"
-		],
+		"skills": ["React", "TypeScript", "Next.js", "A/B Testing", "SCSS", "Bootstrap"],
 		"mockupImgPath": null
 	},
 	{
 		"company": ".IVK",
 		"title": "Full Stack Developer",
-		"date": "Jan - Present",
+		"date": "Jan - Oct 2022",
 		"logoPath": "/images/ivk-logo.png",
 		"logoAlt": ".IVK logo",
 		"description": [
@@ -51,15 +46,7 @@
 		],
 		"webLink": "https://dotivk.com",
 		"githubLink": null,
-		"skills": [
-			"Node.js",
-			"MongoDB",
-			"HTML",
-			"SCSS",
-			"JavaScript",
-			"responsiveness",
-			"a11y"
-		],
+		"skills": ["Node.js", "MongoDB", "HTML", "SCSS", "JavaScript"],
 		"mockupImgPath": null
 	},
 	{
@@ -75,7 +62,7 @@
 		],
 		"webLink": "https://camuseum.web.app",
 		"githubLink": "https://github.com/Hunter27E/cam",
-		"skills": ["HTML", "CSS", "JavaScript", "Figma", "responsiveness"],
+		"skills": ["HTML", "CSS", "JavaScript", "Figma", "Responsive Web Design"],
 		"mockupImgPath": null
 	}
 ]

@@ -6,7 +6,7 @@ import styles from './Experience.module.scss'
 import experiences from './Experience.json'
 
 export const Experience = () => (
-	<section className={`section ${styles.experience}`}>
+	<section className={`section ${styles.experience}`} id='experience'>
 		<h2 className='subheading'>i've learned a lot from my SWE roles!</h2>
 		<h1 className='heading'>EXPERIENCE</h1>
 		<div className={`${styles.cards}`}>

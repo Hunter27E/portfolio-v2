@@ -65,8 +65,6 @@
 .card .content {
 	grid-area: contentSpace;
 
-	height: auto;
-
 	.top {
 		align-items: center;
 
@@ -140,19 +138,24 @@
 
 // if confused, look at gradientBorderWrapper styles above
 .extraProject {
+	height: 100%;
 	padding: 1rem;
 	border-radius: $br-1;
 	background-image: none;
 	background-color: $clr-dark;
 	color: $clr-light;
 
+	.extraProjectDescription {
+		flex-grow: 1;
+	}
+
 	header h1 {
 		margin-right: auto;
 	}
+}
 
-	.clrLight {
-		color: $clr-light;
-	}
+.clrLight {
+	color: $clr-light;
 }
 
 .skills {

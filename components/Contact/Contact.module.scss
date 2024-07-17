@@ -48,21 +48,35 @@
 }
 
 .formGroup {
+	align-items: center;
 	padding: 0.5rem 1rem;
 	border-radius: $br-1;
 	background-color: rgba($clr-primary, 0.75);
 
 	label {
 		font-weight: bold;
+		font-family: Fira Code;
 	}
 
 	input {
 		flex-grow: 1;
 	}
 
+	input,
+	textarea {
+		border-left: 3px solid transparent;
+		padding-left: 0.5rem;
+	}
+
 	input::placeholder,
 	textarea::placeholder {
 		color: rgba($clr-dark, 0.5);
+	}
+
+	input:focus,
+	textarea:focus {
+		outline: none;
+		border-color: $clr-accent;
 	}
 }
 
@@ -84,6 +98,10 @@
 	a:hover {
 		color: $clr-accent;
 	}
+}
+
+.messageFormGroup {
+	align-items: stretch;
 }
 
 @media (min-width: $bp-tablet) {

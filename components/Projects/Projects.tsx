@@ -9,15 +9,11 @@ import extraProjects from './ExtraProjects.json'
 export const Projects = () => {
 	const [showExtra, setShowExtra] = useState(false)
 
-	const projectsToShow = showExtra
-		? [...projects, ...extraProjects]
-		: [...projects]
+	const projectsToShow = showExtra ? [...projects, ...extraProjects] : [...projects]
 
 	return (
-		<section className={`section ${styles.projects}`}>
-			<h2 className='subheading'>
-				i like to practice what i'm learning with projects!
-			</h2>
+		<section className={`section ${styles.projects}`} id='projects'>
+			<h2 className='subheading'>i like to practice what i'm learning with projects!</h2>
 			<h1 className='heading'>PROJECTS</h1>
 			<div className={`flexRow ${styles.cards}`}>
 				{projectsToShow.map(
@@ -48,11 +44,7 @@ export const Projects = () => {
 							githubLink={githubLink}
 							skills={skills}
 							mockupImgPath={mockupImgPath}
-							variant={
-								index < projects.length
-									? 'project'
-									: 'extraProject'
-							}
+							variant={index < projects.length ? 'project' : 'extraProject'}
 						/>
 					)
 				)}
@@ -60,10 +52,10 @@ export const Projects = () => {
 			<button
 				className={`btnPrimary ${styles.toggleExtraProjectsBtn}`}
 				onClick={() => {
-					setShowExtra((prevShowExtra) => !prevShowExtra)
+					setShowExtra(prevShowExtra => !prevShowExtra)
 				}}
 			>
-				{showExtra ? 'HIDE EXTRAS' : 'MORE PROJECTS'}
+				{showExtra ? 'SEE LESS' : 'SEE MORE'}
 			</button>
 		</section>
 	)

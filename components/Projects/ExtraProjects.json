@@ -1,44 +1,58 @@
 [
 	{
-		"company": "Company",
-		"title": "Title",
-		"date": "2023",
+		"company": "Color Guesser",
+		"title": "Frontend Developer",
+		"date": "2022",
 		"logoPath": null,
 		"logoAlt": "",
 		"description": [
-			"just one little description will go here, or maybe it will be more than a little idk"
+			"Simple game for practicing your hex color intuition and fluency."
 		],
-		"webLink": "#",
-		"githubLink": "#",
-		"skills": ["React", "Tailwind", "Something"],
+		"webLink": "",
+		"githubLink": "https://github.com/Hunter27E/color-guesser",
+		"skills": ["React", "CSS", "HTML"],
 		"mockupImgPath": null
 	},
 	{
-		"company": "Company",
-		"title": "Title",
-		"date": "2023",
+		"company": "AR Museum",
+		"title": "Full Stack Developer",
+		"date": "2021",
 		"logoPath": null,
 		"logoAlt": "",
 		"description": [
-			"just one little description will go here, or maybe it will be more than a little idk"
+			"Interactive mobile web application that acts a companion to museum-goers. Allows users to view exhibits in AR on their mobile device alongside easily digestible information complementary to the exhibit itself."
 		],
-		"webLink": "#",
-		"githubLink": "#",
-		"skills": ["React", "Tailwind", "Something"],
+		"webLink": "",
+		"githubLink": "https://github.com/Hunter27E/arm",
+		"skills": ["Node.js", "JavaScript", "CSS", "Handlebars"],
 		"mockupImgPath": null
 	},
 	{
-		"company": "Company",
+		"company": "UCSD A11y Project",
 		"title": "Title",
 		"date": "2023",
 		"logoPath": null,
 		"logoAlt": "",
 		"description": [
-			"just one little description will go here, or maybe it will be more than a little idk"
+			"Assisted UCSD Geisel Library with making some of the library's website pages more accessible through more semantic HTML."
 		],
-		"webLink": "#",
-		"githubLink": "#",
-		"skills": ["React", "Tailwind", "Something"],
+		"webLink": "",
+		"githubLink": "",
+		"skills": ["HTML"],
+		"mockupImgPath": null
+	},
+	{
+		"company": "Portfolio v1",
+		"title": "Frontend Developer",
+		"date": "2022",
+		"logoPath": null,
+		"logoAlt": "",
+		"description": [
+			"First iteration of my portfolio website. Design and development done by me."
+		],
+		"webLink": "https://hunterestrada.xyz/",
+		"githubLink": "https://github.com/Hunter27E/portfolio",
+		"skills": ["JavaScript", "CSS", "HTML"],
 		"mockupImgPath": null
 	}
 ]

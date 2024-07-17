@@ -28,6 +28,7 @@
 	.cardImg {
 		border-radius: $br-1;
 		opacity: 0.5;
+		transition: 0.2s opacity ease-in-out;
 	}
 	.cardImg:hover {
 		opacity: 0.75;

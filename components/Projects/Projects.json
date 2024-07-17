@@ -19,7 +19,9 @@
 		"date": "2022",
 		"logoPath": null,
 		"logoAlt": "",
-		"description": ["Clone of the NY Times game Wordle."],
+		"description": [
+			"Recreation of the NY Times game, Wordle with a few stylistic choices from me."
+		],
 		"webLink": "https://clever-kulfi-8eab4e.netlify.app/",
 		"githubLink": "https://github.com/Hunter27E/wordle-clone",
 		"skills": ["React", "CSS"],

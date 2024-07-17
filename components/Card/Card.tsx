@@ -85,13 +85,13 @@ export const Card = ({
 					)}
 				</div>
 				<div className={`${styles.description} flexColumn`}>
-					{description.map((paragraph) => (
-						<p className='paragraph'>{paragraph}</p>
+					{description.map((paragraph, i) => (
+						<p className='paragraph' key={i}>{paragraph}</p>
 					))}
 				</div>
 				<div className={`${styles.skills} flexRow`}>
-					{skills.map((skill, index) => (
-						<span className={styles.skill} key={index}>
+					{skills.map((skill, i) => (
+						<span className={styles.skill} key={i}>
 							{skill}
 						</span>
 					))}
@@ -110,22 +110,24 @@ export const Card = ({
 			<article className={`${styles.extraProject} flexColumn`}>
 				<header className={`flexRow`}>
 					<h1>{company}</h1>
-					<a href={webLink}>
-						<FontAwesomeIcon
-							icon={faLink}
-							className={`link ${styles.clrLight}`}
-						/>
-					</a>
+					{webLink && (
+						<a href={webLink}>
+							<FontAwesomeIcon
+								icon={faLink}
+								className={`${styles.clrLight} link`}
+							/>
+						</a>
+					)}
 					{githubLink && (
 						<a href={githubLink}>
 							<FontAwesomeIcon
 								icon={faGithub}
-								className={`link ${styles.clrLight}`}
+								className={`${styles.clrLight} link`}
 							/>
 						</a>
 					)}
 				</header>
-				<p>{description}</p>
+				<p className={styles.extraProjectDescription}>{description}</p>
 				<div className={`${styles.skills} flexRow`}>
 					{skills.map((skill, index) => (
 						<span className={styles.skill} key={index}>
