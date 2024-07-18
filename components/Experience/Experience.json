@@ -1,20 +1,20 @@
 [
 	{
 		"company": "TixTrack",
-		"title": "Software Engineer",
+		"title": "Backend Engineer",
 		"date": "Dec 2022 - Now",
 		"logoPath": "images/tixtrack-logo.png",
 		"logoAlt": "TixTrack logo",
 		"description": [
-			"Developing new features and API endpoints and fixed bugs in the application's backend using C# and .NET Core.",
-			"Contributing to increasing backend test coverage by writing C# integration and unit tests for any methods and API endpoints touched.",
+			"Developing new features and API endpoints, fixing bugs in the app's web server using C#, Entity Framework, and .NET Core.",
+			"Writing C# unit and integration tests in order to achieve a comprehensive backend test suite.",
 			"Worked in engineering support investigating, diagnosing, and triaging bugs in the production system reported by clients.",
-			"Writing and testing SQL scripts to fix data in the production database.",
+			"Formulating SQL scripts to investigate and fix corrupt data in the production database.",
 			"Creating documentation for engineering processes and features of the application."
 		],
 		"webLink": "https://www.tixtrack.com",
 		"githubLink": null,
-		"skills": ["C#", "SQL", ".NET Core", "Vue.js"],
+		"skills": ["C#", "SQL", ".NET Core", "EF", "Vue.js"],
 		"mockupImgPath": null
 	},
 	{
@@ -44,7 +44,7 @@
 			"Integrated blog into website using Node.js backend interacting with MongoDB database, external API, and 3rd-party authentication provider.",
 			"Developed web pages using HTML, SCSS, and JavaScript while employing responsive web development and website accessibility best practices."
 		],
-		"webLink": "https://dotivk.com",
+		"webLink": null,
 		"githubLink": null,
 		"skills": ["Node.js", "MongoDB", "HTML", "SCSS", "JavaScript"],
 		"mockupImgPath": null

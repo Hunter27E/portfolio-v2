@@ -29,30 +29,30 @@ export const AboutMe = () => {
 		<section className={`${styles.aboutMe} flexColumn section`} id='aboutMe'>
 			<p className={`${styles.tagline} outlineText flexColumn`}>
 				<span>
-					I'm a<span className='gradientText'> software engineer</span>
+					i'm a<span className='gradientText'> software engineer</span>
 				</span>
 				<span>with a special interest in building</span>
 				<span className='gradientText typewriter'>{words[wordIdx]}</span>
-				<span>user experiences.</span>
+				<span>user experiences</span>
 			</p>
 			<div className={styles.aboutMeCard}>
 				<div className={`flexColumn ${styles.cardText}`}>
 					<h2>ABOUT ME</h2>
+					<p className='paragraph'>Hello! I'm Hunter Estrada, software engineer.</p>
 					<p className='paragraph'>
-						Hello! My name is Hunter Estrada and I'm a software engineer.
+						As a software engineer, web development is my area of proficiency. I've got
+						a keen interest in frontend development but also really enjoy working on the
+						backend. I'm always learning concepts and skills across the stack wherever I
+						can.
 					</p>
 					<p className='paragraph'>
-						Frontend web development is my favorite, but I really enjoy working on the
-						backend too, and even doing some web design at times.
+						I first set my eyes on a career in web development while attending UC San
+						Diego where I obtained my Computer Science degree in 2022. It's been a great
+						journey so far.
 					</p>
 					<p className='paragraph'>
-						I obtained my Bachelor's in Computer Science from UC San Diego in 2022.
-						Midway through my time there in 2020 I picked up web development and have
-						been all about it ever since.
-					</p>
-					<p className='paragraph'>
-						When I'm off the computer, I love playing basketball or tennis, taking road
-						trips, and going camping.
+						When I'm not coding, I love playing basketball or tennis, taking road trips,
+						and going camping.
 					</p>
 					<p className='paragraph'>
 						I hope you enjoy learning a bit about my projects and experiences as a

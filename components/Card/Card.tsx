@@ -16,7 +16,7 @@ interface CardProps {
 	logoPath: string | null
 	logoAlt: string
 	description: string[]
-	webLink: string
+	webLink: string | null
 	githubLink: string | null
 	skills: string[]
 	mockupImgPath: string | null
@@ -52,11 +52,7 @@ export const Card = ({
 			onMouseLeave={() => setIsBeingHovered(false)}
 		>
 			{showCardMask && (
-				<CardMask
-					logoPath={logoPath}
-					logoAlt={logoAlt}
-					isBeingHovered={isBeingHovered}
-				/>
+				<CardMask logoPath={logoPath} logoAlt={logoAlt} isBeingHovered={isBeingHovered} />
 			)}
 			<header>
 				<div className={`${styles.headerLeft} flexColumn`}>
@@ -64,20 +60,16 @@ export const Card = ({
 					<hr />
 					{date && <p className={styles.date}>{date}</p>}
 				</div>
-				{logoPath && (
-					<img
-						src={logoPath}
-						alt={logoAlt}
-						className={styles.headerRight}
-					/>
-				)}
+				{logoPath && <img src={logoPath} alt={logoAlt} className={styles.headerRight} />}
 			</header>
 			<section className={`${styles.content} flexColumn`}>
 				<div className={`${styles.top} flexRow`}>
 					<p className={styles.title}>{title}</p>
-					<a href={webLink}>
-						<FontAwesomeIcon icon={faLink} className='link' />
-					</a>
+					{webLink && (
+						<a href={webLink}>
+							<FontAwesomeIcon icon={faLink} className='link' />
+						</a>
+					)}
 					{githubLink && (
 						<a href={githubLink}>
 							<FontAwesomeIcon icon={faGithub} className='link' />
@@ -86,7 +78,9 @@ export const Card = ({
 				</div>
 				<div className={`${styles.description} flexColumn`}>
 					{description.map((paragraph, i) => (
-						<p className='paragraph' key={i}>{paragraph}</p>
+						<p className='paragraph' key={i}>
+							{paragraph}
+						</p>
 					))}
 				</div>
 				<div className={`${styles.skills} flexRow`}>
@@ -98,11 +92,7 @@ export const Card = ({
 				</div>
 			</section>
 			{mockupImgPath && (
-				<img
-					src={mockupImgPath}
-					alt='Mockup image'
-					className={styles.mockupImg}
-				/>
+				<img src={mockupImgPath} alt='Mockup image' className={styles.mockupImg} />
 			)}
 		</article>
 	) : (
@@ -112,10 +102,7 @@ export const Card = ({
 					<h1>{company}</h1>
 					{webLink && (
 						<a href={webLink}>
-							<FontAwesomeIcon
-								icon={faLink}
-								className={`${styles.clrLight} link`}
-							/>
+							<FontAwesomeIcon icon={faLink} className={`${styles.clrLight} link`} />
 						</a>
 					)}
 					{githubLink && (
