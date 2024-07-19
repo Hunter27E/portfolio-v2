@@ -15,9 +15,9 @@
 
 .title {
 	white-space: nowrap;
-	margin-left: -0.15ch;
-	font-size: 16.5vw;
+	font-size: 14.75vw;
 	line-height: 1;
+	text-align: center;
 
 	-webkit-text-stroke-width: 3px;
 	-webkit-text-stroke-color: rgba($clr-light, 0.75);
@@ -35,6 +35,12 @@
 	gap: 2rem;
 	margin-top: 3rem;
 	padding-left: max(2rem, 10vw);
+}
+
+@media (min-width: $bp-tablet) {
+	.title {
+		font-size: 15.5vw;
+	}
 }
 
 @media (min-width: $bp-desktop) {
