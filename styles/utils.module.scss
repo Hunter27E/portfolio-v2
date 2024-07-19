@@ -6,7 +6,7 @@
 	border: 3px solid transparent;
 	border-radius: 8px;
 	padding: 0.75rem 1.5rem;
-	font-family: 'Fira Code', monospace;
+	font-family: var(--font-fira-code);
 	font-weight: bold;
 	color: $clr-accent;
 	background-color: rgba($clr-accent, 0.3);
@@ -21,7 +21,7 @@
 	border: none;
 	border-bottom: 3px solid transparent;
 	padding: 0.75rem 0;
-	font-family: 'Fira Code', monospace;
+	font-family: var(--font-fira-code);
 	font-weight: bold;
 	color: $clr-dark;
 	background-color: transparent;
@@ -73,6 +73,10 @@
 
 // fonts
 
+.poppins {
+	font-family: var(--font-poppins);
+}
+
 .paragraph {
 	max-width: 55ch;
 	font-size: clamp(12px, 1rem, 24px);
@@ -118,7 +122,7 @@
 	border-right: 2px solid;
 	border-right-style: ridge;
 	max-width: max-content;
-	font-family: 'Fira Code', monospace;
+	font-family: var(--font-fira-code);
 	animation: typing 2s steps(10) infinite, blinking 0.75s infinite;
 }
 
