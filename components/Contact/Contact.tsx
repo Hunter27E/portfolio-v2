@@ -67,16 +67,16 @@ export const Contact = () => {
 				</button>
 			</form>
 			<footer className={`flexRow ${styles.footer}`}>
-				<a href=''>
+				<a href='https://www.facebook.com/hunter.estrada.779/'>
 					<FontAwesomeIcon icon={faFacebook} className='link' />
 				</a>
-				<a href=''>
+				<a href='https://www.instagram.com/hunter27e/'>
 					<FontAwesomeIcon icon={faSquareInstagram} className='link' />
 				</a>
-				<a href=''>
+				<a href='https://linkedin.com/in/hunter-estrada'>
 					<FontAwesomeIcon icon={faLinkedin} className='link' />
 				</a>
-				<a href=''>
+				<a href='https://github.com/Hunter27E'>
 					<FontAwesomeIcon icon={faGithub} className='link' />
 				</a>
 				<p className={styles.tagline}>

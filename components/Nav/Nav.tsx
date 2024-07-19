@@ -55,7 +55,7 @@ export const Nav = ({ activeSection }: NavProps) => {
 	const [open, setOpen] = useState(false)
 
 	const toggleNav = () => {
-		setOpen((prevOpen) => {
+		setOpen(prevOpen => {
 			const body = document.querySelector('body') as HTMLElement
 			body.style.overflow = prevOpen ? 'auto' : 'hidden'
 			return !prevOpen
@@ -71,10 +71,7 @@ export const Nav = ({ activeSection }: NavProps) => {
 		>
 			<div className={styles.screen}></div>
 			<button onClick={toggleNav} className={styles.navToggleBtn}>
-				<FontAwesomeIcon
-					icon={faBars}
-					className={`link ${styles.hamburger}`}
-				/>
+				<FontAwesomeIcon icon={faBars} className={`link ${styles.hamburger}`} />
 			</button>
 			<ul className={styles.navList}>
 				<li>
@@ -84,12 +81,10 @@ export const Nav = ({ activeSection }: NavProps) => {
 				</li>
 				{links.map((link, i) => (
 					<li key={i}>
-						<a href={`#${link.name}`} className='link'>
+						<a href={`#${link.name}`} className='link' onClick={toggleNav}>
 							<FontAwesomeIcon
 								icon={
-									activeSection === link.name
-										? link.solidIcon
-										: link.regularIcon
+									activeSection === link.name ? link.solidIcon : link.regularIcon
 								}
 							/>
 						</a>

@@ -5,9 +5,7 @@
 		"date": "2022",
 		"logoPath": null,
 		"logoAlt": "",
-		"description": [
-			"Simple game for practicing your hex color intuition and fluency."
-		],
+		"description": ["Simple game for practicing your hex color intuition and fluency."],
 		"webLink": "",
 		"githubLink": "https://github.com/Hunter27E/color-guesser",
 		"skills": ["React", "CSS", "HTML"],
@@ -50,7 +48,7 @@
 		"description": [
 			"First iteration of my portfolio website. Design and development done by me."
 		],
-		"webLink": "https://hunterestrada.xyz/",
+		"webLink": "https://portfolio-he.web.app/",
 		"githubLink": "https://github.com/Hunter27E/portfolio",
 		"skills": ["JavaScript", "CSS", "HTML"],
 		"mockupImgPath": null
