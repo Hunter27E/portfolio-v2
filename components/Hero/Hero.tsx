@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Anton } from '@next/font/google'
+import { Anton } from "next/font/google"
 const anton = Anton({
 	subsets: ['latin'],
 	weight: ['400'],

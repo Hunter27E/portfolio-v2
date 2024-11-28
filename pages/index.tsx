@@ -5,7 +5,7 @@ import { Experience } from '../components/Experience/Experience'
 import { Projects } from '../components/Projects/Projects'
 import { Contact } from '../components/Contact/Contact'
 
-import { Poppins, Fira_Code } from '@next/font/google'
+import { Poppins, Fira_Code } from "next/font/google"
 const poppins = Poppins({
 	subsets: ['latin'],
 	weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
